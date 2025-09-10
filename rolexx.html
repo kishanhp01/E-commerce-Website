@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rolex Showcase</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #000; /* fallback */
+      color: white;
+      overflow: hidden;
+    }
+    .container {
+      display: flex;
+      width: 90vw;
+      max-width: 1200px;
+      gap: 40px;
+      height: 80vh;
+    }
+    .card {
+      flex: 1;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+      color: white;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+    }
+    /* Left card gradient background */
+    .card.left {
+      background: linear-gradient(135deg, #1c1c1c 40%, #555555 100%);
+    }
+    /* Right card gradient background */
+    .card.right {
+      background: linear-gradient(135deg, #3f2b0d 40%, #a3946a 100%);
+      color: #fff8dc;
+    }
+    .card h1 {
+      margin: 0 0 10px;
+      font-weight: 700;
+      font-size: 2.5rem;
+      font-style: italic;
+      letter-spacing: 1.5px;
+    }
+    .card h1 .highlight {
+      font-style: normal;
+      font-weight: 400;
+      color: #c0b283;
+    }
+    .card h2 {
+      font-size: 3rem;
+      margin: 0 0 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .card p {
+      font-size: 1rem;
+      line-height: 1.5;
+      max-width: 320px;
+      margin-bottom: 25px;
+      font-style: italic;
+      opacity: 0.85;
+    }
+    .btn {
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 1rem;
+      color: inherit;
+      background: transparent;
+      border: 1.5px solid currentColor;
+      padding: 10px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      width: fit-content;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: currentColor;
+      color: black;
+      text-decoration: none;
+    }
+    .btn svg {
+      stroke: currentColor;
+      width: 16px;
+      height: 16px;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .watch-img {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      max-height: 80%;
+      max-width: 45%;
+      object-fit: contain;
+      user-select: none;
+      pointer-events: none;
+    }
+    /* Adjust text color on right card */
+    .card.right h1, .card.right h2, .card.right p {
+      color: #fff8dc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left card -->
+    <div class="card left">
+      <h1>Rolex <span class="highlight">Oyster</span></h1>
+      <h2>DATEJUST</h2>
+      <p>The Oyster Perpetual Datejust is the epitome of the Classic Rolex watch. Created in 1945, the Datejust was the first self-winding wristwatch chronometer manufactured in-house.</p>
+      <a href="#" class="btn">
+        View All
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      <img class="watch-img" src="ont.jpeg" alt="Rolex Oyster Datejust" />
+    </div>
+
+    <!-- Right card -->
+    <div class="card right">
+      <h1>Rolex <span class="highlight">Oyster</span></h1>
+      <h2>DATEJUST 41</h2>
+      <p>Gold is prized for its luster and stability. Steel reinforces strength and reliability. Together, they harmoniously combine the best of their properties. A true Rolex signature, Rolex has featured on Datejust since the early 1930s, and was instrumental as a name to 1970s.</p>
+      <a href="#" class="btn">
+        View All
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      <img class="watch-img" src="rolex.jpeg" alt="Rolex Oyster Datejust 41" />
+    </div>
+  </div>
+</body>
+</html>
