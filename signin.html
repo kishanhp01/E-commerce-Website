@@ -92,5 +92,18 @@
       Don't have an account? <a href="signup.html">Sign Up</a>
     </div>
   </div>
+  <script>
+    const form = document.querySelector('form');
+  
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+  
+      // Here you could add validation or authentication logic
+  
+      alert('Sign-in successful! Redirecting to your profile...');
+      window.location.href = 'profile.html';  // Redirect to profile page
+    });
+  </script>
+  
 </body>
 </html>
