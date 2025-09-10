@@ -100,5 +100,13 @@
       Already have an account? <a href="signin.html">Sign In</a>
     </div>
   </div>
+  <script>
+    const form = document.querySelector('form');
+  
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      window.location.href = "success.html";
+    });
+  </script>
 </body>
 </html>
